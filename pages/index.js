@@ -20,11 +20,12 @@ export default function Home() {
           This is the collection of Frontendmentor Solutions....
         </p>
 
+
         <div className={styles.grid}>
           <Link href="/signup">
           <a  className={styles.card}>
             <h2>Sign Up Form</h2>
-            <p>Added Client side validation using formik library</p>
+            <p>Simple Form Using React Hook Form.</p>
           </a>
           </Link>
 
