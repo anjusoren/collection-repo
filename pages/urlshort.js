@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import styles from '../styles/UrlShort.module.css';
-import AutoGraphIcon from '@mui/icons-material/AutoGraph';
-function urlshort() {
+
+const Urlshort = () => {
+
   return (
     <div className={styles.container}>
         {/* header */}
         <div className={styles.header}>
           <nav className={styles.nav__left}>
-          <div>
+          <div className={styles.image__div}>
           <Image src="https://raw.githubusercontent.com/anjusoren/collection-repo/main/images/logo.svg"
           alt="shortly logo"  width={100} height={32}/></div>
             <ul>
@@ -38,13 +39,14 @@ function urlshort() {
           </div>
         </div>
         {/* main section */}
+        
         <div className={styles.main__outer}>
         <form>
-          <input placeholder="Shorten a link here..."></input>
-          <button> Shorten it!</button>
+          <input placeholder="Shorten a link here..." ></input>
+          <button type="submit"> Shorten it!</button>
         </form>
         </div>
-
+        
         {/* middle section */}
         <div className={styles.middle}>
           <div className={styles.middle__top}>
@@ -87,7 +89,7 @@ function urlshort() {
         {/* footer */}
       <div className={styles.footer}>
         <div className={styles.footer__logo}>
-          <Image src="https://raw.githubusercontent.com/anjusoren/collection-repo/main/images/logo.svg"
+          <Image src="https://raw.githubusercontent.com/anjusoren/collection-repo/main/public/logo1.svg"
             alt="shortly logo"  width={78} height={32}/>
         </div>
         <div className={styles.footer__features}>
@@ -128,6 +130,6 @@ function urlshort() {
       </div>
     </div>
   )
-}
+};
 
-export default urlshort
+export default Urlshort

@@ -156,7 +156,7 @@
 
 .card__body{
     background-color: white;
-    width:25%;
+    width:30%;
     padding:1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -252,4 +252,60 @@
     display:flex;
     gap:10px;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 560px){
+    .header{
+       display:none;
+    }
+   .hero{
+    display:flex;
+    flex-direction: column;
+   }
+
+   .main__outer {
+    width:75vw;
+    height:20vh;
+   }
+
+   
+   .main__outer > form{
+    display:flex;
+    flex-direction: column;
+   align-items: center;
+   
+   }
+
+   .main__outer > form > input{
+    width:50vw;
+   }
+
+   .main__outer > form > button{
+    justify-self: center;
+    width:25vw;
+   }
+
+   .middle__bottom__card{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+   }
+   .card__body{
+    width:75vw;
+   }
+
+   .bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .bottom > button{
+    width: 20vw;
+   }
+
+   .footer{
+    display: flex;
+    flex-direction: column;
+   }
 }
